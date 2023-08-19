@@ -11,7 +11,7 @@ This solver can be used when you want to use cert-manager with Oracle Cloud Infr
 ## Clone
 
 ```bash
-git clone https://github.com/pacphi/cert-manager-webhook-oci
+git clone https://github.com/thpham/cert-manager-webhook-oci
 ```
 
 ## Installation

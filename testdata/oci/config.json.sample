@@ -1,4 +1,3 @@
-# Optional. A Secret name to load config from if not using Workload Principal authentication.
 {
-    "ociProfileSecretName": "oci-profile",
+    "ociProfileSecretName": "oci-profile"
 }
