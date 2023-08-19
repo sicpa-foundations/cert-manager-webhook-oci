@@ -43,7 +43,7 @@ helm install \
 # This is from a fork of https://gitlab.com/dn13/cert-manager-webhook-oci
 # @see https://gitlab.com/jcotton/cert-manager-webhook-oci.git
 cd /tmp
-git clone https://github.com/pacphi/cert-manager-webhook-oci.git
+git clone https://github.com/thpham/cert-manager-webhook-oci.git
 cd cert-manager-webhook-oci
 helm install --namespace cert-manager cert-manager-webhook-oci ./deploy/cert-manager-webhook-oci \
   --set image.repository=$IMAGE_REPOSITORY_NAME

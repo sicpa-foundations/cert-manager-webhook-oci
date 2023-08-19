@@ -61,7 +61,7 @@ on_ocir() {
 
 ## Clone
 cd /tmp
-git clone https://gitlab.com/jcotton/cert-manager-webhook-oci.git
+git clone https://github.com/thpham/cert-manager-webhook-oci.git
 cd cert-manager-webhook-oci
 git checkout fix_and_update
 

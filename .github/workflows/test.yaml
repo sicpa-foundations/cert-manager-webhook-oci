@@ -1,0 +1,23 @@
+name: 'Run tests'
+
+on:
+  pull_request:
+    types: [ labeled ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    if: github.event.label.name == 'testing'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - uses: actions/setup-go@v4
+        with:
+          go-version: '1.20.4'
+
+      - name: Run tests
+        shell: bash
+        run: |
+          make test

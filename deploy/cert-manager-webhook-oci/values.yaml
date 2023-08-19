@@ -11,7 +11,7 @@ certManager:
   serviceAccountName: cert-manager
 
 image:
-  repository: tpham/cert-manager-webhook-oci
+  repository: ghcr.io/thpham/cert-manager-webhook-oci
   tag: latest
   pullPolicy: Always
 
