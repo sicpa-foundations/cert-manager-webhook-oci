@@ -1,6 +1,4 @@
-# cert-manager-webhook-oci Helm Chart
-
-![Release Helm Chart](https://github.com/thpham/cert-manager-webhook-oci/workflows/Release%20Helm%20Chart/badge.svg?branch=main)
+# Helm Chart Repository
 
 ## Usage
 
@@ -9,18 +7,15 @@ Please refer to Helm's [documentation](https://helm.sh/docs/) to get started.
 
 Once Helm is set up properly, add the repo as follows:
 
-Because this repository is private and helm authentication doesn't work with private Github Pages, we have to use the `helm-git` plugin to fetch the charts
-
 ```console
-helm plugin install https://github.com/aslafy-z/helm-git --version 0.10.0
-helm repo add cert-manager-webhook-oci "git+https://github.com/thpham/cert-manager-webhook-oci@charts?ref=main"
+helm repo add cert-manager-webhook-oci https://thpham.github.io/cert-manager-webhook-oci
 > helm repo update
 > helm repo list
 NAME URL
-cert-manager-webhook-oci git+https://github.com/thpham/cert-manager-webhook-oci
+cert-manager-webhook-oci https://thpham.github.io/cert-manager-webhook-oci
 > helm search repo -l cert-manager-webhook-oci/
-NAME CHART VERSION APP VERSION DESCRIPTION
-cert-manager-webhook-oci/cert-manager-webhook-oci 1.11.2 1.0 Allow cert-manager to solve DNS challenges using Oracle Cloud Infrastructure DNS
+NAME                                                    CHART VERSION   APP VERSION     DESCRIPTION
+cert-manager-webhook-oci/cert-manager-webhook-oci       1.0             1.11.2          Allow cert-manager to solve DNS challenges using Oracle Cloud Infrastructure DNS
 ```
 
 You can then run `helm search repo cert-manager-webhook-oci` to see the charts.
