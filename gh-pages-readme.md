@@ -14,8 +14,8 @@ helm repo add cert-manager-webhook-oci https://thpham.github.io/cert-manager-web
 NAME URL
 cert-manager-webhook-oci https://thpham.github.io/cert-manager-webhook-oci
 > helm search repo -l cert-manager-webhook-oci/
-NAME CHART VERSION APP VERSION DESCRIPTION
-cert-manager-webhook-oci/cert-manager-webhook-oci 1.11.2 1.0 Allow cert-manager to solve DNS challenges using Oracle Cloud Infrastructure DNS
+NAME                                                    CHART VERSION   APP VERSION     DESCRIPTION
+cert-manager-webhook-oci/cert-manager-webhook-oci       1.0             1.11.2          Allow cert-manager to solve DNS challenges using Oracle Cloud Infrastructure DNS
 ```
 
 You can then run `helm search repo cert-manager-webhook-oci` to see the charts.
