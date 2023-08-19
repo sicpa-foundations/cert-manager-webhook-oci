@@ -34,6 +34,5 @@ jobs:
         uses: helm/chart-releaser-action@v1.5.0
         with:
           charts_dir: deploy
-          charts_repo_url: https://github.com/thpham/cert-manager-webhook-oci
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
