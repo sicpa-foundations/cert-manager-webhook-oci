@@ -39,4 +39,4 @@ WORKDIR /
 COPY --from=builder /usr/bin/cert-manager-webhook-oci /
 USER nonroot:nonroot
 
-CMD ["/cert-manager-webhook-oci"]
+ENTRYPOINT ["/cert-manager-webhook-oci"]
